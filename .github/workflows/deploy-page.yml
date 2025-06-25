@@ -41,7 +41,7 @@ jobs:
         run: npm run build
 
       - name: setup pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: upload page content
         uses: actions/upload-pages-artifact@v3
