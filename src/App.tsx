@@ -46,16 +46,21 @@ function App() {
         >
           <Container maxWidth="md" sx={{ textAlign: 'center' }}>
             <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold', mb: 4 }}>
-              COMING SOON
+              TKURBX COMING SOON
             </Typography>
             <Typography variant="h5" component="p" color="text.secondary" sx={{ mb: 6 }}>
               We are working hard to bring you something amazing!
             </Typography>
-            
+
+            <Typography variant="body1" color="text.secondary" sx={{ mb: 4 }}>
+              Turku, Finland is an upcoming Roblox roleplay game based on the real-world city of Turku.
+              It is being developed under the project name tkurbx. The game creates a semi-realistic world inspired by Finnish life and public services.
+            </Typography>
+
             {/* TODO: Uncomment the Countdown component when ready to use it */}
             {/* <Countdown targetDate={targetDate} /> */}
 
-            <SocialButtons />            
+            <SocialButtons />
           </Container>
         </Box>
       </ThemeProvider>
