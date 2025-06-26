@@ -30,7 +30,7 @@ const ImageBackdropButton: React.FC<ImageBackdropButtonProps> = ({ index, imgSrc
         type="button"
         onClick={handleOpen}
       >
-        <img src={imgSrc} alt={`Image ${index + 1}`} style={{ width: '100%', borderRadius: '8px', display: 'block' }} />
+        <img src={imgSrc} alt={`Image ${index + 1}`} style={{ width: '100%', borderRadius: '4px', display: 'block' }} />
       </Button>
 
       <Backdrop
