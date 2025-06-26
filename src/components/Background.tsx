@@ -69,12 +69,12 @@ const Background: React.FC<BackgroundProps> = ({ children }) => {
       <CssBaseline />
       <Box
         sx={{
-          minHeight: '100vh',
-          width: '100vw',
+          minHeight: '100%',
+          width: '100%',
           position: 'fixed', // Keep the background fixed
           top: 0,
           left: 0,
-          zIndex: 0, // Ensure it's behind all other content
+          zIndex: -1, // Ensure it's behind all other content
           overflow: 'hidden', // Hide any overflow from the gradients
           cursor: 'default', // Default cursor over the background
 
@@ -95,23 +95,23 @@ const Background: React.FC<BackgroundProps> = ({ children }) => {
             pointerEvents: 'none', // Critical: ensures this pseudo-element doesn't block mouse events
           },
 
-          // Randomly moving highlight (smaller, dynamic)
-          '&::after': {
-            content: '""',
-            position: 'absolute',
-            width: '300px', // Size of the highlight
-            height: '300px',
-            background: `radial-gradient(circle at center, ${darkBluishTheme.palette.primary.light} 0%, transparent 60%)`,
-            opacity: 0.08, // Very subtle highlight
-            borderRadius: '50%', // Make it circular
-            pointerEvents: 'none', // Critical: ensures highlight doesn't block events on elements above it
+          // // Randomly moving highlight (smaller, dynamic)
+          // '&::after': {
+          //   content: '""',
+          //   position: 'absolute',
+          //   width: '300px', // Size of the highlight
+          //   height: '300px',
+          //   background: `radial-gradient(circle at center, ${darkBluishTheme.palette.primary.light} 0%, transparent 60%)`,
+          //   opacity: 0.08, // Very subtle highlight
+          //   borderRadius: '50%', // Make it circular
+          //   pointerEvents: 'none', // Critical: ensures highlight doesn't block events on elements above it
             
-            // Use the internally managed highlightPosition to translate the highlight
-            // The -50% offsets are to center the highlight
-            transform: `translate(calc(${highlightPosition.x}px - 50%), calc(${highlightPosition.y}px - 50%))`,
-            transition: 'transform 7s ease-in-out, opacity 0.5s ease-out', // Slower transition for smooth movement
-            willChange: 'transform, opacity', // Optimize for animation performance
-          },
+          //   // Use the internally managed highlightPosition to translate the highlight
+          //   // The -50% offsets are to center the highlight
+          //   transform: `translate(calc(${highlightPosition.x}px - 50%), calc(${highlightPosition.y}px - 50%))`,
+          //   transition: 'transform 7s ease-in-out, opacity 0.5s ease-out', // Slower transition for smooth movement
+          //   willChange: 'transform, opacity', // Optimize for animation performance
+          // },
 
           // Keyframes for the background gradient animation
           '@keyframes gradient-animation': {
