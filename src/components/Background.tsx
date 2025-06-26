@@ -29,7 +29,7 @@ interface BackgroundProps {
 
 const Background: React.FC<BackgroundProps> = ({ children }) => {
   // State to hold the current target position for the highlight
-  const [highlightPosition, setHighlightPosition] = useState({ x: 0, y: 0 });
+  const [_highlightPosition, setHighlightPosition] = useState({ x: 0, y: 0 });
   // Ref to store the latest window dimensions
   const dimensionsRef = useRef({ width: window.innerWidth, height: window.innerHeight });
 
