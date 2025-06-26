@@ -92,6 +92,8 @@ function App() {
           flexFlow: 'column',
           alignItems: 'center',
           justifyContent: 'center',
+          px: 1,
+          py: 1,
         }}
       >
 
