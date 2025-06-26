@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import { Masonry } from "@mui/lab";
+import ImageBackdropButton from "./ImageBackdropButton";
 
 const ImageFiles = [
     "/home/turkuimgs/1.png",
@@ -14,7 +15,7 @@ const ImageMasonry = () => {
         <Masonry columns={3} spacing={1} >
             {ImageFiles.map((file, index) => (
                 <Box key={index} sx={{ width: '100%' }}>
-                    <img src={file} alt={`Image ${index + 1}`} style={{ width: '100%', borderRadius: '8px' }} />
+                    <ImageBackdropButton index={index} imgSrc={file} />
                 </Box>
             ))}
         </Masonry>
