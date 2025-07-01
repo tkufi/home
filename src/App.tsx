@@ -1,7 +1,7 @@
 import { Container, Typography, Box, CssBaseline } from '@mui/material';
 import { Icon } from '@iconify/react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-// import Countdown from './components/Countdown';
+import Countdown from './components/Countdown';
 import Background from './components/Background';
 import SocialButtons from './components/SocialButtons';
 import ImageMasonry from './components/ImageMasonry'; // Import the ImageMasonry component
@@ -28,7 +28,7 @@ const theme = createTheme({
 });
 
 function App() {
-  // const targetDate = '2025-12-25T00:00:00'; // Target date for the countdown
+  const targetDate = '2025-12-25T00:00:00'; // Target date for the countdown
 
   return (
     <ThemeProvider theme={theme}>
@@ -60,7 +60,7 @@ function App() {
           </Typography>
 
           {/* TODO: Uncomment the Countdown component when ready to use it */}
-          {/* <Countdown targetDate={targetDate} /> */}
+          <Countdown targetDate={targetDate} />
 
           <SocialButtons />
         </Container>
