@@ -27,7 +27,7 @@ const SocialButtons = () => {
                     <Button
                         variant="outlined"
                         startIcon={<Icon icon="simple-icons:maildotru" width="24" height="24"></Icon>}
-                        href='mailto:tkurbx@dovn.com?subject=Tkurbx Developer Enquiry'
+                        href='mailto:hello@tkurbx.com?subject=Tkurbx Developer Enquiry'
                         target="_blank"
                         size="large"
                     >
