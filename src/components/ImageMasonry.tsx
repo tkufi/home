@@ -3,11 +3,11 @@ import { Masonry } from "@mui/lab";
 import ImageBackdropButton from "./ImageBackdropButton";
 
 const ImageFiles = [
-    "/home/turkuimgs/1.png",
-    "/home/turkuimgs/2.png",
-    "/home/turkuimgs/3.png",
-    "/home/turkuimgs/4.png",
-    "/home/turkuimgs/5.png",
+    "/turkuimgs/1.png",
+    "/turkuimgs/2.png",
+    "/turkuimgs/3.png",
+    "/turkuimgs/4.png",
+    "/turkuimgs/5.png",
 ]
 
 const ImageMasonry = () => {
