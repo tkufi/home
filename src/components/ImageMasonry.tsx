@@ -8,6 +8,7 @@ const ImageFiles = [
     "/turkuimgs/3.png",
     "/turkuimgs/4.png",
     "/turkuimgs/5.png",
+    "https://i.imgur.com/o9mqL9b.gif"
 ]
 
 const ImageMasonry = () => {
