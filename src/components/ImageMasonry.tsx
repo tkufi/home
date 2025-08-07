@@ -11,6 +11,7 @@ const ImageFiles = [
     "https://i.imgur.com/o9mqL9b.gif",
     "/turkuimgs/6.png",
     "https://i.imgur.com/anFDQGj.gif",
+    "/tkrkuimgs/7.png",
 ]
 
 const ImageMasonry = () => {
